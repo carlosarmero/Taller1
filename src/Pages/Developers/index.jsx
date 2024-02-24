@@ -1,7 +1,16 @@
+import Slider from 'react-slick';//crea carrusel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import '../App/App.css'
+import Eslider from '../../Components/Slider/Slider';
+
 export default function Developers() {
     return (
-      <h1 className="text-3xl font-bold underline">
-        Hello Bootcamp Developers!
-      </h1>
+      <>
+      <div>
+        <Eslider/>
+      </div>
+
+  </>    
     )
   }
