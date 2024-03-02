@@ -24,7 +24,7 @@ function Eslider() {
           <Slider {...settings}>
             {data.map((d)=>(
             <div><div key={d.name} className="">
-                <img src={d.img} alt='' className='h-44 w-44 rounded-full mt-10 mb-2 my-auto mx-auto' />
+                <img src={d.img} alt='' className='h-44 w-44 rounded-full mt-5 mb-2 my-auto mx-auto' />
               </div>
               <div className='flex flex-col item-center justify-center gap-1 p-1'>
                   <p className='text-xl font-semibold'>Nombre: {d.name}</p>
