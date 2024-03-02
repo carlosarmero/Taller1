@@ -6,14 +6,10 @@ const Navbar = () => {
     const activeStyle = 'underline underline-offset-4'
 
     return(
-        <nav className='flex  justify-between items-center '>
+      <header className='bg-white shadow-md py-2 '>
+        <nav className='container mx-auto flex justify-between items-center '>
           <ul className='flex items-center gap-4 mt-4'>
 
-           <li className='font-semibold text-lg'>
-             <NavLink to = '/'>
-              Carlos
-             </NavLink>
-           </li>
            <li>
             <NavLink to = '/'
             className={({isActive}) => isActive ? activeStyle:undefined}
@@ -47,6 +43,8 @@ const Navbar = () => {
 
           </ul>       
         </nav>
+      </header>
+  
     )
 }
 

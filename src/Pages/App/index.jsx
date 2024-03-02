@@ -10,8 +10,8 @@ import './App.css'
 const AppRoutes = () => {
   let routes = useRoutes([
     { path:'/', element:<Home />},
-    { path: '/Developers', element: <Developers /> },
-    { path: '/Projects', element :<Projects/>},
+    { path: '/Developers', element: <Developers  /> },
+    { path: '/Projects', element: <Projects /> },
     { path: '/Sobre', element :<Sobre/>},
   ])
   return routes
@@ -20,12 +20,10 @@ const AppRoutes = () => {
 const App = () => {
 
   return (
-    <><BrowserRouter>
+    <BrowserRouter>
       <AppRoutes />
       <Navbar />
     </BrowserRouter>
-    </>
-
-  )
+   )
 }
 export default App
